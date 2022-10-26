@@ -30,6 +30,7 @@ export class HeaderComponent implements OnInit {
     this.uiService.toggleAddTask();
   }
 
+  //Método para limitar que el botón solo aparezca en la ruta principal es decir "/"
   hasRoute(route: string) {
     return this.router.url === route;
   }

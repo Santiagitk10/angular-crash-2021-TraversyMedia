@@ -37,6 +37,7 @@ const appRoutes: Routes = [
     FormsModule,
     RouterModule.forRoot(appRoutes, { enableTracing: true }),
   ],
+  //enableTracing es para hacerle debug  las rutas
   providers: [],
   bootstrap: [AppComponent],
 })
