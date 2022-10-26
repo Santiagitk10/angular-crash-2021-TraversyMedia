@@ -13,6 +13,10 @@ const httpOptions = {
   providedIn: 'root',
 })
 export class TaskService {
+
+//En esta aplicación se usa npm JSON Server (npm i json-server), que proporciona un face API,
+// es como tene un back end local
+
   private apiUrl = 'http://localhost:5000/tasks';
 
   constructor(private http: HttpClient) {}
@@ -35,3 +39,5 @@ export class TaskService {
     return this.http.post<Task>(this.apiUrl, task, httpOptions);
   }
 }
+
+
